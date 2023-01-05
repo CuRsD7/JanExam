@@ -1,0 +1,22 @@
+﻿<Window x:Class="JanExam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JanExam"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Tiddlywinks World Cup" HorizontalAlignment="Center" Margin="0,57,0,0" VerticalAlignment="Top" Height="41" Width="236" FontSize="22"/>
+        <Label Content="Teams" HorizontalAlignment="Left" Margin="28,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.083,-1.351"/>
+        <ListBox x:Name="lbxTeams" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="28,156,566,42" SelectionChanged="lbxTeams_SelectionChanged"/>
+        <ListBox x:Name="lbxPlayers" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="338,156,251,42"/>
+        <Label Content="Players" HorizontalAlignment="Left" Margin="338,125,0,0" VerticalAlignment="Top"/>
+        <Label Content="Record Result" HorizontalAlignment="Left" Margin="680,217,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnWin" Content="Win" HorizontalAlignment="Left" Margin="709,274,0,0" VerticalAlignment="Top" Click="btnWin_Click"/>
+        <Button x:Name="btnDraw" Content="Draw" HorizontalAlignment="Left" Margin="709,347,0,0" VerticalAlignment="Top" Click="btnDraw_Click"/>
+        <Button x:Name="btnLoss" Content="Loss" HorizontalAlignment="Left" Margin="709,309,0,0" VerticalAlignment="Top" Click="btnLoss_Click"/>
+
+    </Grid>
+</Window>
