@@ -20,6 +20,10 @@ namespace JanExam
     /// </summary>
     public partial class MainWindow : Window
     {
+        /* GITHUB LINK
+         * https://github.com/CuRsD7/JanExam
+         */
+
         List<Team> teams = new List<Team>();
         List<Player> frenchPlayers = new List<Player>();
         List<Player> spanishPlayers = new List<Player>();
